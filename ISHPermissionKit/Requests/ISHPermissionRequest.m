@@ -54,7 +54,7 @@
         return ISHPermissionStateUnknown;
     }
     
-    return [state integerValue];
+    return [state unsignedIntegerValue];
 }
 
 - (void)setInternalPermissionState:(ISHPermissionState)state {    

@@ -130,7 +130,7 @@
 }
 
 - (ISHPermissionCategory)categoryAtIndex:(NSUInteger)index {
-    return [[self.permissionCategories objectAtIndex:index] integerValue];
+    return [[self.permissionCategories objectAtIndex:index] unsignedIntegerValue];
 }
 
 - (ISHPermissionRequest *)requestAtIndex:(NSUInteger)index {
