@@ -50,7 +50,7 @@
 
 - (ISHPermissionState)internalPermissionState {
     NSNumber *state = [[NSUserDefaults standardUserDefaults] objectForKey:[self persistentIdentifier]];
-    if (!state) {
+    if (nil == state) {
         return ISHPermissionStateUnknown;
     }
     
